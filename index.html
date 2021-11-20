@@ -3,388 +3,206 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./index.css" />
   </head>
-  <body style="width: 100%; margin: 0; padding: 0">
+  <body>
     <div
-      class="main"
+      class="navbar"
       style="
-        width: 100%;
-        align-self: center;
-        justify-self: center;
+        padding: 16px;
         display: flex;
-        flex-direction: column;
-        margin: 0;
-        padding: 0;
+        justify-content: space-between;
+        align-items: center;
+      "
+    >
+      <img src="./stella.png" alt="" srcset="" style="width: 100px" />
+      <ul style="display: flex; color: white">
+        <li style="padding: 10px">Home</li>
+        <li style="padding: 10px">Fakemon</li>
+        <li style="padding: 10px">Concept</li>
+        <li style="padding: 10px">Creator</li>
+      </ul>
+    </div>
+    <!-- <div class="header" style="opacity: 1; position: relative; width: 100vw">
+      <img
+        src="./stella.png"
+        alt=""
+        srcset=""
+        style="width: 50vw; position: absolute; left: 25vw; top: 10vh"
+      />
+      <img
+        src="./phospiri.png"
+        alt=""
+        srcset=""
+        style="width: 100vw; position: absolute"
+      />
+    </div> -->
+
+    <div
+      style="
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
       "
     >
       <div
-        class="navigation-btns"
-        style="width: 100%; display: flex; justify-content: space-between"
-      >
-        <button
-          class="btns"
-          style="
-            min-width: 105px;
-            height: 40px;
-            border: none;
-            border-radius: 20px;
-            padding-left: 16px;
-            padding-right: 16px;
-            background-color: #2a4365;
-            color: white;
-          "
-        >
-          <i class="fas fa-chevron-left" style="padding-right: 8px"></i>Previous
-        </button>
-        <button
-          class="btns"
-          style="
-            min-width: 105px;
-            height: 40px;
-            border: none;
-            border-radius: 20px;
-            padding-left: 16px;
-            padding-right: 16px;
-            background-color: #2a4365;
-            color: white;
-          "
-        >
-          next<i class="fas fa-chevron-right" style="padding-left: 8px"></i>
-        </button>
-      </div>
-
-      <div
         style="
-          width: 100%;
-          display: flex;
-          justify-content: space-between;
-          flex-direction: row;
-          align-content: center;
-        "
-      >
-        <div style="width: 30%">
-          <p>#006</p>
-          <h2>REPTYRE</h2>
-          <p>
-            The flame inside its body burns hotter than 3,600 degrees
-            Fahrenheit. When Reptyre roars, that temperature climbs even higher.
-            It evolves from Ingdra starting at level 36. It is the final form of
-            Salusan.
-          </p>
-        </div>
-        <div style="width: 50%; padding: 100px">
-          <img src="./reptyre.png" alt="" style="width: 80%" />
-        </div>
-
-        <div style="width: 20%">
-          <p>#006</p>
-          <h2>REPTYRE</h2>
-          <p>
-            The flame inside its body burns hotter than 3,600 degrees
-            Fahrenheit. When Reptyre roars, that temperature climbs even higher.
-            It evolves from Ingdra starting at level 36. It is the final form of
-            Salusan.
-          </p>
-        </div>
-      </div>
-
-      <div
-        style="
-          width: 100%;
-          display: flex;
-          justify-content: space-between;
-          flex-direction: row;
-          background-color: antiquewhite;
           position: relative;
+          min-width: 500px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         "
       >
+        <img
+          class="photo"
+          src="./photo1.png"
+          style="
+            max-width: 150px;
+            height: auto;
+            transform: rotate(-15deg);
+            position: absolute;
+            top: 90px;
+            left: 0;
+            z-index: 10;
+            box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.36);
+          "
+        />
+        <img
+          class="photo"
+          src="./photo2.png"
+          style="
+            max-width: 200px;
+            height: auto;
+            transform: rotate(-5deg);
+            position: absolute;
+            top: 40px;
+            left: 20%;
+            box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.36);
+          "
+        />
+        <img
+          class="photo"
+          src="./photo3.png"
+          style="
+            max-width: 150px;
+            height: auto;
+            transform: rotate(8deg);
+            position: absolute;
+            top: 50px;
+            right: 20%;
+            z-index: 10;
+            box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.36);
+          "
+        />
+        <img
+          class="photo"
+          src="./photo4.png"
+          style="
+            max-width: 120px;
+            height: auto;
+            transform: rotate(15deg);
+            position: absolute;
+            top: 120px;
+            right: 0;
+            z-index: 20;
+            box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.36);
+          "
+        />
         <div
-          style="width: 60%; position: absolute; top: -25%; margin-left: 50px"
-        >
-          <iframe
-            width="100%"
-            height="400px"
-            style="
-              border: 1px;
-              border-radius: 20px;
-              box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.43);
-            "
-            id="gmap_canvas"
-            src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=k&z=13&ie=UTF8&iwloc=&output=embed"
-            frameborder="0"
-            scrolling="no"
-            marginheight="0"
-            marginwidth="0"
-          ></iframe>
-        </div>
-
-        <div style="width: 40%">
-          <h2>REPTYRE</h2>
-          <p>
-            The flame inside its body burns hotter than 3,600 degrees
-            Fahrenheit. When Reptyre roars, that temperature climbs even higher.
-            It evolves from Ingdra starting at level 36. It is the final form of
-            Salusan.
-          </p>
-        </div>
-      </div>
-
-      <div
-        style="
-          width: 100%;
-          display: flex;
-          justify-content: space-between;
-          flex-direction: row;
-        "
-      >
-        <div
+          class="photo
           style="
-            width: 60%;
-            padding: 100px;
-            background-color: white;
-            box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.43);
+            background-color: blue;
+            width: 300px;
+            height: 300px;
+            border: 0px;
+            border-radius: 100%;
+            position: absolute;
+            top: 0;
+            left: 20%;
+            z-index: -1;
           "
-        >
-          <table style="width: 100%" border="2" cellpadding="8">
-            <tbody>
-              <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-              </tr>
-              <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-              </tr>
-              <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-              </tr>
-              <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-              </tr>
-              <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-              </tr>
-              <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-              </tr>
-              <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-              </tr>
-              <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-              </tr>
-              <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-              </tr>
-              <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-              </tr>
-              <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-              </tr>
-              <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <main>
-          <div class="blob">
-            <svg width="200" height="600" viewBox="0 0 600 600">
-              <path>
-                <animate
-                  attributeName="d"
-                  dur="8s"
-                  repeatCount="indefinite"
-                  values="M431.3 121.9c22 40.1 11.3 97.5 13.3 146.9 2 49.5 16.6 91.1 4.3 121.8-12.2 30.6-51.3 50.4-88.5 55.1-37.1 4.7-72.4-5.7-108.8-17.1-36.5-11.3-74.1-23.7-104-52-29.9-28.2-52-72.4-48.4-115.4 3.5-43 32.7-84.8 70.5-122.2 37.7-37.3 84-70.2 134.5-75.1 50.4-5 105.1 17.9 127.1 58z;
-                              
-                                              M404.4 176.7c20.9 16.4 20.8 58.8 38.8 106.2 18.1 47.4 54.4 99.7 40.9 123.6-13.5 23.9-76.7 19.3-131.6 40.4-54.8 21-101.2 67.7-150.5 71.7-49.4 4.1-101.7-34.5-107.8-81.9C88 389.2 128 333 144.2 278c16.2-55.1 8.5-108.8 30.5-125 22-16.1 73.7 5.5 120.4 11.3 46.7 5.9 88.5-3.9 109.3 12.4z;
-                            
-                            M431.3 121.9c22 40.1 11.3 97.5 13.3 146.9 2 49.5 16.6 91.1 4.3 121.8-12.2 30.6-51.3 50.4-88.5 55.1-37.1 4.7-72.4-5.7-108.8-17.1-36.5-11.3-74.1-23.7-104-52-29.9-28.2-52-72.4-48.4-115.4 3.5-43 32.7-84.8 70.5-122.2 37.7-37.3 84-70.2 134.5-75.1 50.4-5 105.1 17.9 127.1 58z;"
-                />
-              </path>
-            </svg>
-          </div>
-        </main>
-        <main>
-          <div class="blob">
-            <svg width="200" height="600" viewBox="0 0 600 600">
-              <path>
-                <animate
-                  attributeName="d"
-                  dur="8s"
-                  repeatCount="indefinite"
-                  values="M431.3 121.9c22 40.1 11.3 97.5 13.3 146.9 2 49.5 16.6 91.1 4.3 121.8-12.2 30.6-51.3 50.4-88.5 55.1-37.1 4.7-72.4-5.7-108.8-17.1-36.5-11.3-74.1-23.7-104-52-29.9-28.2-52-72.4-48.4-115.4 3.5-43 32.7-84.8 70.5-122.2 37.7-37.3 84-70.2 134.5-75.1 50.4-5 105.1 17.9 127.1 58z;
-                              
-                                              M404.4 176.7c20.9 16.4 20.8 58.8 38.8 106.2 18.1 47.4 54.4 99.7 40.9 123.6-13.5 23.9-76.7 19.3-131.6 40.4-54.8 21-101.2 67.7-150.5 71.7-49.4 4.1-101.7-34.5-107.8-81.9C88 389.2 128 333 144.2 278c16.2-55.1 8.5-108.8 30.5-125 22-16.1 73.7 5.5 120.4 11.3 46.7 5.9 88.5-3.9 109.3 12.4z;
-                            
-                            M431.3 121.9c22 40.1 11.3 97.5 13.3 146.9 2 49.5 16.6 91.1 4.3 121.8-12.2 30.6-51.3 50.4-88.5 55.1-37.1 4.7-72.4-5.7-108.8-17.1-36.5-11.3-74.1-23.7-104-52-29.9-28.2-52-72.4-48.4-115.4 3.5-43 32.7-84.8 70.5-122.2 37.7-37.3 84-70.2 134.5-75.1 50.4-5 105.1 17.9 127.1 58z;"
-                />
-              </path>
-            </svg>
-          </div>
-        </main>
-      </div>
-
-      <div
-        style="
-          width: 100%;
-          display: flex;
-          justify-content: space-between;
-          flex-direction: row;
-        "
-      >
-        <div style="width: 30%">
-          <img src="./reptyre.png" alt="" style="width: 80%" />
-        </div>
-        <div style="width: 30%">
-          <img src="./reptyre.png" alt="" style="width: 80%" />
-        </div>
-
-        <div style="width: 30%">
-          <img src="./reptyre.png" alt="" style="width: 80%" />
-        </div>
-      </div>
-
-      <div
-        style="
-          width: 100%;
-          display: flex;
-          justify-content: space-between;
-          flex-direction: row;
-        "
-      >
-        <div style="width: 70%; padding: 100px">
-          <img src="./laurinhanosaurus.png" alt="" style="width: 100%" />
-        </div>
-
-        <div style="width: 30%">
-          <h2>REPTYRE</h2>
-          <p>
-            The flame inside its body burns hotter than 3,600 degrees
-            Fahrenheit. When Reptyre roars, that temperature climbs even higher.
-            It evolves from Ingdra starting at level 36. It is the final form of
-            Salusan.
-          </p>
-        </div>
-      </div>
-
-      <div
-        class="navigation-btns"
-        style="width: 100%; display: flex; justify-content: space-between"
-      >
-        <button
-          class="btns"
-          style="
-            min-width: 105px;
-            height: 40px;
-            border: none;
-            border-radius: 20px;
-            padding-left: 16px;
-            padding-right: 16px;
-            background-color: #2a4365;
-            color: white;
-          "
-        >
-          <i class="fas fa-chevron-left" style="padding-right: 8px"></i>Previous
-        </button>
-        <button
-          class="btns"
-          style="
-            min-width: 105px;
-            height: 40px;
-            border: none;
-            border-radius: 20px;
-            padding-left: 16px;
-            padding-right: 16px;
-            background-color: #2a4365;
-            color: white;
-          "
-        >
-          next<i class="fas fa-chevron-right" style="padding-left: 8px"></i>
-        </button>
+        ></div>
       </div>
     </div>
 
-    <script src="./index.js"></script>
+    <!-- <div class="container-fluid">
+      <div class="px-4 d-flex justify-content-between">
+        <div class="col-4">
+          <h1 class="title">The Idea Behind it</h1>
+          <p class="text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus
+            molestias dolor ea suscipit vel optio inventore voluptatum. Ea,
+            officiis laudantium, ipsa ad saepe dolore cumque quod nihil dolorum
+            minima et!
+          </p>
+          <button class="button">Know more</button>
+        </div>
+        <div class="">
+          <img src="./photos.png" alt="" srcset="" style="width: 605px" />
+40        </div>
+      </div>
+    </div> -->
+    <!-- 
+
+      
+
+      <div class="section slider-cards"></div>
+      <div class="section teaser">
+        <img src="./next.png" alt="" srcset="" style="width: 500px;">
+        <div class="text-area">
+          <h2 class="title">NEXT FAKEMON</h2>
+          <span class="badge">COMING ON 05/12/21</span>
+          <p class="text"> 
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus
+            molestias dolor ea suscipit vel optio inventore voluptatum. Ea,
+            officiis laudantium, ipsa ad saepe dolore cumque quod nihil dolorum
+            minima et!
+          </p>
+        </div>
+       
+
+      </div>
+      <div class="section creator">
+        <div class="text-area">
+        <h2 class="title">The Idea Behind it</h2>
+        <p class="text"> 
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus
+          molestias dolor ea suscipit vel optio inventore voluptatum. Ea,
+          officiis laudantium, ipsa ad saepe dolore cumque quod nihil dolorum
+          minima et!
+        </p>
+        <button class="button">Know more</button>
+      </div>
+        <img src="./creator.png" alt="" srcset="" style="width: 600px;">
+
+    </div> -->
+
+    <!-- <div class="col-12 footer">
+      <div class="social">
+        <img src="./reptyre.png" alt="" srcset="" style="width: 20px" />
+        <img src="./reptyre.png" alt="" srcset="" style="width: 20px" />
+        <img src="./reptyre.png" alt="" srcset="" style="width: 20px" />
+        <img src="./reptyre.png" alt="" srcset="" style="width: 20px" />
+      </div>
+      <p class="signature">© Stella-Region by BRUNO JUSTA</p>
+    </div> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
