@@ -78,6 +78,7 @@ body {
   font-family: Poppins;
   font-weight: 800;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .teaser-text h1 {
@@ -229,10 +230,6 @@ img[class$="-photo"]:hover {
 /* POLAROIDS */
 /* -------- */
 
-.slider-section {
-  background-color: #707070;
-}
-
 .footer {
   width: 100%;
   /*  position: absolute; */
@@ -245,8 +242,11 @@ img[class$="-photo"]:hover {
   font-size: 12px;
   font-family: Poppins;
 }
-.social img {
+
+.social a {
+  color: #2a4365;
   margin: 0 10px 10px 10px;
+  font-size: 20px;
 }
 
 div[class$="-section"] {
@@ -283,6 +283,198 @@ div[class$="-img"] {
   justify-content: flex-end;
   align-items: flex-end;
   padding: 30px;
+}
+
+.logo {
+  width: 50vw;
+  position: absolute;
+  left: 0;
+  top: 10%;
+  bottom: 0;
+  right: 0;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.phospiri {
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -5%;
+  left: 0;
+  margin-bottom: auto;
+  margin-left: auto;
+}
+
+.container {
+  width: 100%;
+  overflow: hidden;
+  padding: 80px 0;
+}
+
+.container .main-card {
+  display: flex;
+  justify-content: space-evenly;
+  width: 200%;
+  transition: 1s;
+}
+
+#two:checked ~ .main-card {
+  margin-left: -100%;
+}
+
+.container .main-card .cards {
+  width: calc(100% / 2 - 10px);
+  display: flex;
+  margin: 0 20px;
+  justify-content: space-between;
+}
+
+.main-card .cards .card {
+  width: calc(100% / 3 - 10px);
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.main-card .cards .card:hover {
+  transform: translateY(-15px);
+}
+
+.cards .card .content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: start;
+}
+
+.cards .card .content .img {
+  height: 180px;
+  width: 180px;
+  align-self: center;
+  margin-bottom: 20px;
+  z-index: 10;
+}
+
+.card .content .img img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  z-index: 10;
+}
+
+.card .content .name {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: Poppins;
+}
+
+.card .content .number {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: Poppins;
+}
+
+.card .content .type-fire {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.type-fire {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 100px;
+  border: 0;
+  background: #dd2424;
+  padding: 2px 6px 2px 6px;
+}
+
+.back-ball {
+  width: 200px;
+  position: absolute;
+  z-index: 1;
+  top: -50px;
+  right: -30px;
+  left: 0;
+  bottom: 0;
+  margin-left: auto;
+  margin-bottom: auto;
+  transform: rotate(-35deg);
+}
+
+.container .buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.buttons label {
+  height: 15px;
+  width: 15px;
+  border-radius: 20px;
+  background: #2a4365;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.buttons label.active {
+  width: 35px;
+}
+
+#one:checked ~ .buttons .one {
+  width: 35px;
+}
+
+#one:checked ~ .buttons.two {
+  width: 15px;
+}
+
+#two:checked ~ .buttons .one {
+  width: 15px;
+}
+
+#two:checked ~ .buttons .two {
+  width: 35px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .main-card .cards .card {
+    margin: 20px 0 10px 0;
+    width: calc(100% / 2 - 10px);
+  }
+
+  .container .main-card .cards {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-card .cards .card {
+    /* margin: 20px 0 10px 0; */
+    width: 100%;
+  }
+
+  .container .main-card .cards {
+    flex-wrap: wrap;
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -326,5 +518,27 @@ div[class$="-img"] {
     align-items: center;
     padding: 30px;
     margin-top: 80px;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .header {
+    background-image: url("back2.png");
+    height: 700px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+
+  .phospiri {
+    display: none;
+  }
+
+  .logo {
+    width: 80vw;
   }
 }
