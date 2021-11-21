@@ -326,7 +326,7 @@ div[class$="-img"] {
 }
 
 .container .main-card .cards {
-  width: calc(100% / 2 - 10px);
+  width: calc(100% / 2 - 50px);
   display: flex;
   margin: 0 20px;
   justify-content: space-between;
