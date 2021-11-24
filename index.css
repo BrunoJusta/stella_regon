@@ -320,7 +320,7 @@ div[class$="-img"] {
   margin-left: auto;
 }
 
-.container {
+/* .container {
   width: 100%;
   overflow: hidden;
   padding: 80px 0;
@@ -480,12 +480,259 @@ input[type="radio"] {
 
 @media (max-width: 600px) {
   .main-card .cards .card {
+    /* margin: 20px 0 10px 0; */ /*
+    width: 100%;
+  }
+
+  .container .main-card .cards {
+    flex-wrap: wrap;
+  }
+} */
+
+.container {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.container .main-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 200%;
+  transition: 1s;
+  margin-top: 20px;
+}
+
+#two:checked ~ .main-card {
+  transform: translateX(-332px);
+}
+
+#three:checked ~ .main-card {
+  transform: translateX(-664px);
+}
+
+#four:checked ~ .main-card {
+  transform: translateX(-996px);
+}
+
+#five:checked ~ .main-card {
+  transform: translateX(-1328px);
+}
+
+#six:checked ~ .main-card {
+  transform: translateX(-1660px);
+}
+
+.container .main-card .cards {
+  width: calc(100% / 2 - 50px);
+  display: flex;
+  margin: 20px;
+  justify-content: space-between;
+}
+
+.main-card .card {
+  min-width: 300px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  margin-left: 32px;
+}
+
+.main-card .card:hover {
+  transform: translateY(-15px);
+}
+
+.card .content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: start;
+}
+
+.card .content .img {
+  height: 230px;
+  width: 230px;
+  align-self: center;
+  margin-bottom: 20px;
+  z-index: 10;
+}
+
+.card .content .img img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  z-index: 10;
+}
+
+.card .content .name {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: Poppins;
+}
+
+.card .content .number {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: Poppins;
+}
+
+.card .content .type-fire {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.type-fire {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 100px;
+  border: 0;
+  background: #dd2424;
+  padding: 2px 6px 2px 6px;
+}
+
+.back-ball {
+  width: 200px;
+  position: absolute;
+  z-index: 1;
+  top: -50px;
+  right: -30px;
+  left: 0;
+  bottom: 0;
+  margin-left: auto;
+  margin-bottom: auto;
+  transform: rotate(-35deg);
+}
+
+.container .buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.buttons label {
+  height: 15px;
+  width: 15px;
+  border-radius: 20px;
+  background: #2a4365;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.buttons label.active {
+  width: 35px;
+}
+
+#one:checked ~ .buttons .one {
+  width: 35px;
+}
+
+#one:checked ~ .buttons .two,
+.buttons .three,
+.buttons .four,
+.buttons .five,
+.buttons .six {
+  width: 15px;
+}
+
+#two:checked ~ .buttons .one,
+.buttons .three,
+.buttons .four,
+.buttons .five,
+.buttons .six {
+  width: 15px;
+}
+
+#two:checked ~ .buttons .two {
+  width: 35px;
+}
+
+#three:checked ~ .buttons .one,
+.buttons .two,
+.buttons .four,
+.buttons .five,
+.buttons .six {
+  width: 15px;
+}
+
+#three:checked ~ .buttons .three {
+  width: 35px;
+}
+
+#four:checked ~ .buttons .one,
+.buttons .two,
+.buttons .three,
+.buttons .five,
+.buttons .six {
+  width: 15px;
+}
+
+#four:checked ~ .buttons .four {
+  width: 35px;
+}
+
+#five:checked ~ .buttons .one,
+.buttons .two,
+.buttons .four,
+.buttons .three,
+.buttons .six {
+  width: 15px;
+}
+
+#five:checked ~ .buttons .five {
+  width: 35px;
+}
+
+#six:checked ~ .buttons .one,
+.buttons .two,
+.buttons .four,
+.buttons .five,
+.buttons .three {
+  width: 15px;
+}
+
+#six:checked ~ .buttons .six {
+  width: 35px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .main-card .cards .card {
+    margin: 20px 0 10px 0;
+    width: calc(100% / 2 - 10px);
+  }
+
+  .container .main-card .cards {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-card .cards .card {
     /* margin: 20px 0 10px 0; */
     width: 100%;
   }
 
   .container .main-card .cards {
     flex-wrap: wrap;
+  }
+
+  .container {
+    overflow: visible;
   }
 }
 
