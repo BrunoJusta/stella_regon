@@ -139,6 +139,10 @@ body {
   font-size: 20px;
 }
 
+.navigation-section {
+  margin-top: 80px !important;
+}
+
 div[class$="-section"] {
   width: 100%;
   max-width: 1440px;
@@ -149,10 +153,18 @@ div[class$="-section"] {
   margin-top: 150px;
 }
 
-.evolution-section {
+.evolution {
+  margin: 200px 0 200px 0;
+  width: 100vw;
+  position: relative;
+  left: calc(-50vw + 50%);
   background-image: url("./Evolutions.png");
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 div[class$="-text"] {
@@ -168,6 +180,35 @@ div[class$="-img"] {
   width: 100%;
 }
 
+.profile {
+  padding: 20px;
+  margin-bottom: 200px;
+  width: 100%;
+  max-width: 1240px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 32px;
+  grid-template-areas:
+    "text-info avatar-info avatar-info stats-info"
+    "text-info avatar-info avatar-info stats-info";
+  justify-content: center;
+  align-items: center;
+}
+.text-info {
+  grid-area: text-info;
+}
+.text-info h2 {
+  grid-area: text-info;
+  text-align: start;
+}
+.avatar-info {
+  grid-area: avatar-info;
+}
+.stats-info {
+  grid-area: stats-info;
+}
+
 .evo {
   height: inherit !important;
   width: 100%;
@@ -179,6 +220,7 @@ div[class$="-img"] {
 
 .level {
   height: 150px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -209,16 +251,125 @@ div[class$="-img"] {
   margin: 4px;
 }
 
+.habitat-map {
+  width: 100%;
+  padding: 50px;
+}
+
+.habitat-section,
+.evolution-section {
+  margin-top: 0 !important;
+}
+
+.habitat {
+  width: 100vw;
+  position: relative;
+  left: calc(-50vw + 50%);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 20%,
+    rgba(247, 250, 252, 1) 20%,
+    rgba(247, 250, 252, 1) 80%,
+    rgba(255, 255, 255, 1) 80%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery {
+  margin: 100px 0 150px 0;
+  height: 400px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "gallery-img-1 gallery-img-3 gallery-img-3 gallery-img-4 gallery-img-6 gallery-img-7"
+    "gallery-img-2 gallery-img-3 gallery-img-3 gallery-img-5 gallery-img-6 gallery-img-8";
+}
+
+.gallery-img-1 {
+  grid-area: gallery-img-1;
+  background-image: url("./salusan_2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery-img-2 {
+  grid-area: gallery-img-2;
+  background-image: url("./salusan_5.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery-img-3 {
+  grid-area: gallery-img-3;
+  background-image: url("./salusan_7.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery-img-4 {
+  grid-area: gallery-img-4;
+  background-image: url("./salusan_3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery-img-5 {
+  grid-area: gallery-img-5;
+  background-image: url("./salusan_4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery-img-6 {
+  grid-area: gallery-img-6;
+  background-image: url("./salusan_1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery-img-7 {
+  grid-area: gallery-img-7;
+  background-image: url("./salusan_6.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery-img-8 {
+  grid-area: gallery-img-8;
+  background-image: url("./salusan_8.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 @media only screen and (max-width: 1100px) {
   div[class$="-section"] {
     padding: 0 1em 0 1em;
   }
 
-  .profile-section {
+  .info-section {
     flex-direction: column-reverse;
   }
   .habitat-section {
     flex-direction: column-reverse;
+    background: linear-gradient(
+      0deg,
+      rgba(247, 250, 252, 1) 0%,
+      rgba(247, 250, 252, 1) 100%
+    );
   }
   .inspiration-section {
     flex-direction: column-reverse;
@@ -228,11 +379,105 @@ div[class$="-img"] {
     align-items: center;
   }
 
+  .text-info h2 {
+    grid-area: text-info;
+    text-align: center;
+  }
   .text {
     text-align: center;
   }
 
   .title {
     font-size: 1.8rem;
+    padding-top: 30px;
   }
+}
+
+@media only screen and (max-width: 768px) {
+  .profile {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "avatar-info"
+      "avatar-info"
+      "text-info"
+      "stats-info";
+  }
+  .gallery {
+    height: 2000px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "gallery-img-1 gallery-img-2"
+      "gallery-img-3 gallery-img-3"
+      "gallery-img-3 gallery-img-3"
+      "gallery-img-4 gallery-img-5"
+      "gallery-img-6 gallery-img-6"
+      "gallery-img-6 gallery-img-6"
+      "gallery-img-6 gallery-img-6"
+      "gallery-img-7 gallery-img-8";
+  }
+}
+
+.weaknesses-info {
+  display: flex;
+  flex-direction: row;
+}
+.type-personal {
+  display: flex;
+  flex-direction: row;
+}
+
+.stats-area {
+  margin: 16px 0 16px 0;
+}
+.stat {
+  margin: 16px 0 16px 0;
+}
+.stats-text {
+  color: var(--primary);
+  font-size: 0.9rem;
+  font-family: Poppins;
+  font-weight: 300;
+  line-height: 130%;
+}
+
+.progress-bar {
+  background-color: #e5e6ec;
+  height: 10px;
+  border: 0;
+  border-radius: 100px;
+}
+
+.progress-hp {
+  width: 48%;
+  height: 100%;
+  background-color: #2d3748;
+  border: 0;
+  border-radius: 100px;
+}
+.progress-attk {
+  width: 75%;
+  height: 100%;
+  background-color: #2d3748;
+  border: 0;
+  border-radius: 100px;
+}
+
+.progress-dfs {
+  width: 40%;
+  height: 100%;
+  background-color: #2d3748;
+  border: 0;
+  border-radius: 100px;
+}
+
+.progress-spd {
+  width: 80%;
+  height: 100%;
+  background-color: #2d3748;
+  border: 0;
+  border-radius: 100px;
 }
