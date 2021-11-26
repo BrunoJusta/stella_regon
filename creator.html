@@ -11,23 +11,35 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./styles/creator.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
     <div class="nav">
-      <img src="./img/logo.png" alt="" srcset="" style="width: 70px" />
-      <ul
-        style="
-          display: flex;
-          color: white;
-          font-family: Poppins;
-          font-size: 14px;
-        "
-      >
+      <img src="./img/logo.png" alt="stella_region" style="width: 70px" />
+      <div class="burger">
+        <div class="dropdown">
+          <i class="fas fa-align-justify"></i>
+          <div class="dropdown-content-burger">
+            <a href="/index.html">Home </a>
+            <a href="#">Fakmeon </a>
+            <a href="#">Concept </a>
+            <a href="#">Concept </a>
+          </div>
+        </div>
+      </div>
+      <ul class="menu">
         <li style="padding: 10px"><a href="/">Home</a></li>
-        <li style="padding: 10px">Fakemon</li>
+        <div class="dropdown">
+          <li class="dropbtn" style="padding: 10px">Fakemon</li>
+          <div class="dropdown-content">
+            <a href="#">All </a>
+            <a href="#">New </a>
+            <a href="#">Upcoming </a>
+          </div>
+        </div>
         <li style="padding: 10px">Concept</li>
         <li style="padding: 10px"><a href="creator.html">Creator</a></li>
       </ul>
@@ -70,7 +82,7 @@
         </ul>
       </div>
       <div class="creator-image" data-aos="fade-up" data-aos-duration="1000">
-        <img src="./img/me.png" alt="" style="width: 100%" />
+        <img src="./img/bruno.png" alt="bruno_justa" style="width: 100%" />
       </div>
     </div>
 
