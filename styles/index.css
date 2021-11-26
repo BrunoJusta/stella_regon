@@ -21,6 +21,7 @@ table {
 
 html {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
@@ -61,9 +62,19 @@ body {
   align-items: center;
   box-shadow: var(--shadow);
 }
+.nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.burger {
+  color: white;
+  font-size: 24px;
+  display: none;
+}
 
 .header {
-  background-image: url("backstella.jpg");
+  background-image: url("../img/backstella.jpg");
   height: 700px;
   background-attachment: fixed;
   background-position: center;
@@ -79,6 +90,7 @@ body {
   font-weight: 800;
   margin-bottom: 20px;
   text-align: center;
+  line-height: 130%;
 }
 
 .teaser-text h1 {
@@ -102,6 +114,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
   margin-bottom: 20px;
+  line-height: 150%;
 }
 
 .button {
@@ -147,6 +160,7 @@ body {
 /* -------- */
 /* POLAROIDS */
 /* -------- */
+
 .concept-img {
   position: relative;
 }
@@ -255,8 +269,17 @@ div[class$="-section"] {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3em;
-  margin: 100px 0 100px 0;
+  padding: 0 10em 0 10em;
+  margin-top: 150px;
+}
+
+.concept-section {
+  margin-top: 200px !important;
+  margin-bottom: 50px;
+}
+
+.creator-section {
+  margin-bottom: 100px;
 }
 
 div[class$="-text"] {
@@ -310,30 +333,47 @@ div[class$="-img"] {
 
 .container {
   width: 100%;
-  overflow: hidden;
-  padding: 80px 0;
+  overflow-x: hidden;
 }
 
 .container .main-card {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: space-between;
   width: 200%;
   transition: 1s;
+  margin-top: 20px;
 }
 
 #two:checked ~ .main-card {
-  margin-left: -100%;
+  transform: translateX(-332px);
+}
+
+#three:checked ~ .main-card {
+  transform: translateX(-664px);
+}
+
+#four:checked ~ .main-card {
+  transform: translateX(-996px);
+}
+
+#five:checked ~ .main-card {
+  transform: translateX(-1328px);
+}
+
+#six:checked ~ .main-card {
+  transform: translateX(-1660px);
 }
 
 .container .main-card .cards {
-  width: calc(100% / 2 - 10px);
+  width: calc(100% / 2 - 50px);
   display: flex;
-  margin: 0 20px;
+  margin: 20px;
   justify-content: space-between;
 }
 
-.main-card .cards .card {
-  width: calc(100% / 3 - 10px);
+.main-card .card {
+  min-width: 300px;
   background: #fff;
   border-radius: 12px;
   padding: 30px;
@@ -341,13 +381,14 @@ div[class$="-img"] {
   transition: all 0.4s ease;
   position: relative;
   overflow: hidden;
+  margin-left: 32px;
 }
 
-.main-card .cards .card:hover {
+.main-card .card:hover {
   transform: translateY(-15px);
 }
 
-.cards .card .content {
+.card .content {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -356,9 +397,9 @@ div[class$="-img"] {
   text-align: start;
 }
 
-.cards .card .content .img {
-  height: 180px;
-  width: 180px;
+.card .content .img {
+  height: 230px;
+  width: 230px;
   align-self: center;
   margin-bottom: 20px;
   z-index: 10;
@@ -439,11 +480,19 @@ div[class$="-img"] {
   width: 35px;
 }
 
-#one:checked ~ .buttons.two {
+#one:checked ~ .buttons .two,
+.buttons .three,
+.buttons .four,
+.buttons .five,
+.buttons .six {
   width: 15px;
 }
 
-#two:checked ~ .buttons .one {
+#two:checked ~ .buttons .one,
+.buttons .three,
+.buttons .four,
+.buttons .five,
+.buttons .six {
   width: 15px;
 }
 
@@ -451,8 +500,63 @@ div[class$="-img"] {
   width: 35px;
 }
 
+#three:checked ~ .buttons .one,
+.buttons .two,
+.buttons .four,
+.buttons .five,
+.buttons .six {
+  width: 15px;
+}
+
+#three:checked ~ .buttons .three {
+  width: 35px;
+}
+
+#four:checked ~ .buttons .one,
+.buttons .two,
+.buttons .three,
+.buttons .five,
+.buttons .six {
+  width: 15px;
+}
+
+#four:checked ~ .buttons .four {
+  width: 35px;
+}
+
+#five:checked ~ .buttons .one,
+.buttons .two,
+.buttons .four,
+.buttons .three,
+.buttons .six {
+  width: 15px;
+}
+
+#five:checked ~ .buttons .five {
+  width: 35px;
+}
+
+#six:checked ~ .buttons .one,
+.buttons .two,
+.buttons .four,
+.buttons .five,
+.buttons .three {
+  width: 15px;
+}
+
+#six:checked ~ .buttons .six {
+  width: 35px;
+}
+
 input[type="radio"] {
   display: none;
+}
+
+.menu {
+  display: flex;
+  color: white;
+  font-family: Poppins;
+  font-size: 14px;
 }
 
 @media (max-width: 768px) {
@@ -463,6 +567,12 @@ input[type="radio"] {
 
   .container .main-card .cards {
     flex-wrap: wrap;
+  }
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
   }
 }
 
@@ -477,7 +587,11 @@ input[type="radio"] {
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1100px) {
+  div[class$="-section"] {
+    padding: 0 1em 0 1em;
+  }
+
   div[class$="-text"] {
     align-items: center;
   }
@@ -525,7 +639,7 @@ input[type="radio"] {
   }
 
   .header {
-    background-image: url("back2.png");
+    background-image: url("../img/back2.png");
     height: 700px;
     background-attachment: fixed;
     background-position: center;
@@ -541,4 +655,40 @@ input[type="radio"] {
   .logo {
     width: 80vw;
   }
+}
+
+.dropbtn {
+  color: white;
+  border: none;
+  background-color: transparent;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  background-color: transparent;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }

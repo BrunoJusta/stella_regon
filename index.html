@@ -1,197 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <title>Document</title>
-    <link rel="stylesheet" href="./index.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
-</head>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
 
-<body>
+  <body>
     <div class="nav">
-        <img src="./logo.png" alt="" srcset="" style="width: 70px" />
-        <ul style="display: flex; color: white; font-family: Poppins; font-size: 14px;">
-            <li style="padding: 10px">Home</li>
-            <li style="padding: 10px">Fakemon</li>
-            <li style="padding: 10px">Concept</li>
-            <li style="padding: 10px">Creator</li>
-        </ul>
+      <img src="./img/logo.png" alt="" srcset="" style="width: 70px" />
+      <div class="burger"><i class="fas fa-align-justify"></i></div>
+      <ul class="menu">
+        <li style="padding: 10px"><a href="/">Home</a></li>
+        <div class="dropdown">
+          <li class="dropbtn" style="padding: 10px">Fakemon</li>
+          <div class="dropdown-content">
+            <a href="#">All </a>
+            <a href="#">New </a>
+            <a href="#">Upcoming </a>
+          </div>
+        </div>
+        <li style="padding: 10px">Concept</li>
+        <li style="padding: 10px"><a href="creator.html">Creator</a></li>
+      </ul>
     </div>
     <div class="header" style="opacity: 1; position: relative; width: 100vw">
-        <img src="./stella.png" alt="" srcset="" class="logo" />
-        <img src="./phospiri.png" alt="" srcset="" class="phospiri" />
+      <img
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        src="./img/stella.png"
+        alt=""
+        srcset=""
+        class="logo"
+      />
+      <img
+        data-aos="fade-up"
+        data-aos-duration="1200"
+        src="./img/phospiri.png"
+        alt=""
+        srcset=""
+        class="phospiri"
+      />
     </div>
     <div class="concept-section">
-        <div class="concept-text">
-            <h1 class="title">The Idea Behind it</h1>
-            <p class="text">
-                Stella Region consists on the creation of a complete fakedex, with 121 Fakemon. All based on the
-                culture, legends, fauna and flora of Portugal, from the iconic Barcelos Rooster to the Iberian Wolves.
-            </p>
-            <button class="button">Know more</button>
+      <div class="concept-text">
+        <h1 class="title">The Idea Behind it</h1>
+        <p class="text">
+          Stella Region consists on the creation of a complete fakedex, with 121
+          Fakemon. All based on the culture, legends, fauna and flora of
+          Portugal, from the iconic Barcelos Rooster to the Iberian Wolves.
+        </p>
+        <button class="button">Know more</button>
+      </div>
+      <div class="concept-img">
+        <div class="circle">
+          <img class="first-photo" src="./img/photo1.png" />
+          <img class="second-photo" src="./img/photo2.png" />
+          <img class="third-photo" src="./img/photo3.png" />
+          <img class="fourth-photo" src="./img/photo4.png" />
         </div>
-        <div class="concept-img">
-
-            <div class="circle">
-                <img class="first-photo" src="./photo1.png" />
-                <img class="second-photo" src="./photo2.png" />
-                <img class="third-photo" src="./photo3.png" />
-                <img class="fourth-photo" src="./photo4.png" />
-            </div>
-        </div>
+      </div>
     </div>
-    
-   
+
     <div class="slider-section">
+      <div class="container">
+        <input type="radio" name="dot" id="one" />
+        <input type="radio" name="dot" id="two" />
+        <input type="radio" name="dot" id="three" />
+        <input type="radio" name="dot" id="four" />
+        <input type="radio" name="dot" id="five" />
+        <input type="radio" name="dot" id="six" />
 
-        <div class="container">
-            <input type="radio" name="dot" id="one">
-            <input type="radio" name="dot" id="two">
-            <input type="radio" name="dot" id="three">
-            <input type="radio" name="dot" id="four">
-            <input type="radio" name="dot" id="five">
-            <input type="radio" name="dot" id="six">
-
-            <div class="main-card">
-                    <div class="card" >
-                        <div class="content">
-                            <div class="img">
-                                <img src="./reptyre.png" alt="">
-                            </div>
-                            <div class="details">
-                                <div class="number">#003</div>
-                                <div class="name">Reptyre</div>
-                            </div>
-                            <div class="type-fire"> Fire </div>
-                            <img class="back-ball" src="./ball.png" alt="" srcset="">
-
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="content">
-                            <div class="img">
-                                <img src="./reptyre.png" alt="">
-                            </div>
-                            <div class="details">
-                                <div class="number">#003</div>
-                                <div class="name">Reptyre</div>
-                            </div>
-                            <div class="type-fire"> Fire </div>
-                            <img class="back-ball" src="./ball.png" alt="" srcset="">
-
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="content">
-                            <div class="img">
-                                <img src="./reptyre.png" alt="">
-                            </div>
-                            <div class="details">
-                                <div class="number">#003</div>
-                                <div class="name">Reptyre</div>
-                            </div>
-                            <div class="type-fire"> Fire </div>
-                            <img class="back-ball" src="./ball.png" alt="" srcset="">
-
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="content">
-                            <div class="img">
-                                <img src="./reptyre.png" alt="">
-                            </div>
-                            <div class="details">
-                                <div class="number">#003</div>
-                                <div class="name">Reptyre</div>
-                            </div>
-                            <div class="type-fire"> Fire </div>
-                            <img class="back-ball" src="./ball.png" alt="" srcset="">
-
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="content">
-                            <div class="img">
-                                <img src="./reptyre.png" alt="">
-                            </div>
-                            <div class="details">
-                                <div class="number">#003</div>
-                                <div class="name">Reptyre</div>
-                            </div>
-                            <div class="type-fire"> Fire </div>
-                            <img class="back-ball" src="./ball.png" alt="" srcset="">
-
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="content">
-                            <div class="img">
-                                <img src="./reptyre.png" alt="">
-                            </div>
-                            <div class="details">
-                                <div class="number">#003</div>
-                                <div class="name">Reptyre</div>
-                            </div>
-                            <div class="type-fire"> Fire </div>
-                            <img class="back-ball" src="./ball.png" alt="" srcset="">
-
-                        </div>
+        <div class="main-card">
+          <a href="details.html" style="color: inherit; text-decoration: none"
+            ><div class="card" data-aos="zoom-in">
+              <div class="content">
+                <div class="img">
+                  <img src="./img/reptyre.png" alt="" />
                 </div>
+                <div class="details">
+                  <div class="number">#003</div>
+                  <div class="name">Reptyre</div>
+                </div>
+                <div class="type-fire">Fire</div>
+                <img class="back-ball" src="./img/ball.png" alt="" srcset="" />
+              </div>
             </div>
-            <div class="buttons">
-                <label for="one" class=" active one"></label>
-                <label for="two" class="two"></label>
-                <label for="three" class="three"></label>
-                <label for="four" class="four"></label>
-                <label for="five" class="five"></label>
-                <label for="six" class="six"></label>
-
+          </a>
+          <div class="card" data-aos="zoom-in">
+            <div class="content">
+              <div class="img">
+                <img src="./img/reptyre.png" alt="" />
+              </div>
+              <div class="details">
+                <div class="number">#003</div>
+                <div class="name">Reptyre</div>
+              </div>
+              <div class="type-fire">Fire</div>
+              <img class="back-ball" src="./img/ball.png" alt="" srcset="" />
             </div>
+          </div>
+          <div class="card" data-aos="zoom-in">
+            <div class="content">
+              <div class="img">
+                <img src="./img/reptyre.png" alt="" />
+              </div>
+              <div class="details">
+                <div class="number">#003</div>
+                <div class="name">Reptyre</div>
+              </div>
+              <div class="type-fire">Fire</div>
+              <img class="back-ball" src="./img/ball.png" alt="" srcset="" />
+            </div>
+          </div>
+          <div class="card" data-aos="zoom-in">
+            <div class="content">
+              <div class="img">
+                <img src="./img/reptyre.png" alt="" />
+              </div>
+              <div class="details">
+                <div class="number">#003</div>
+                <div class="name">Reptyre</div>
+              </div>
+              <div class="type-fire">Fire</div>
+              <img class="back-ball" src="./img/ball.png" alt="" srcset="" />
+            </div>
+          </div>
+          <div class="card" data-aos="zoom-in">
+            <div class="content">
+              <div class="img">
+                <img src="./img/reptyre.png" alt="" />
+              </div>
+              <div class="details">
+                <div class="number">#003</div>
+                <div class="name">Reptyre</div>
+              </div>
+              <div class="type-fire">Fire</div>
+              <img class="back-ball" src="./img/ball.png" alt="" srcset="" />
+            </div>
+          </div>
+          <div class="card" data-aos="zoom-in">
+            <div class="content">
+              <div class="img">
+                <img src="./img/reptyre.png" alt="" />
+              </div>
+              <div class="details">
+                <div class="number">#003</div>
+                <div class="name">Reptyre</div>
+              </div>
+              <div class="type-fire">Fire</div>
+              <img class="back-ball" src="./img/ball.png" alt="" srcset="" />
+            </div>
+          </div>
         </div>
+        <div class="buttons">
+          <label for="one" class="active one"></label>
+          <label for="two" class="two"></label>
+          <label for="three" class="three"></label>
+          <label for="four" class="four"></label>
+          <label for="five" class="five"></label>
+          <label for="six" class="six"></label>
+        </div>
+      </div>
     </div>
     <div class="teaser-section">
-        <div class="teaser-img">
-            <img src="./next.png" alt="" srcset="" style="max-width: 400px;">
-        </div>
-        <div class="teaser-text">
-            <h1 class="title">Next Fakemon</h1>
-            <p class="badge">Coming 07/12/2021</p>
-            <p class="text">
-                This Fakemon is draconic and bipedal with green skin. It has large, golden rings on its ears. Its
-                striated underbelly isgreyish and extends from its neck to the tip of its long, tapering tail. It has
-                thick arms and legs ending in three claws each.Its wings are big with red wing membranes.
-            </p>
-            <button class="button">Know more</button>
-        </div>
+      <div class="teaser-img">
+        <img src="./img/next.png" alt="" srcset="" style="max-width: 400px" />
+      </div>
+      <div class="teaser-text">
+        <h1 class="title">Next Fakemon</h1>
+        <p class="badge">Coming 07/12/2021</p>
+        <p class="text">
+          This Fakemon is draconic and bipedal with green skin. It has large,
+          golden rings on its ears. Its striated underbelly isgreyish and
+          extends from its neck to the tip of its long, tapering tail. It has
+          thick arms and legs ending in three claws each.Its wings are big with
+          red wing membranes.
+        </p>
+        <button class="button">Know more</button>
+      </div>
     </div>
     <div class="creator-section">
-        <div class="creator-text">
-            <h1 class="title">The Idea Behind it</h1>
-            <p class="text">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus
-                molestias dolor ea suscipit vel optio inventore voluptatum. Ea,
-                officiis laudantium, ipsa ad saepe dolore cumque quod nihil dolorum
-                minima et!
-            </p>
-            <button class="button">Know more</button>
-        </div>
-        <div class="creator-img">
-            <img src="./creator.png" alt="" srcset="" style="width: 300px;">
-        </div>
-    </div>
+      <div class="creator-text">
+        <h1 class="title">The Idea Behind it</h1>
+        <p class="text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus
+          molestias dolor ea suscipit vel optio inventore voluptatum. Ea,
+          officiis laudantium, ipsa ad saepe dolore cumque quod nihil dolorum
+          minima et!
+        </p>
+        <button class="button">Know more</button>
+      </div>
+      <div class="creator-img">
+        <img src="./img/creator.png" alt="" srcset="" style="width: 300px" />
+      </div>
     </div>
     <footer class="footer">
-        <div class="social">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-behance-square"></i></a>
-        </div>
-        <p class="signature">© Stella-Region by BRUNO JUSTA</p>
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-behance-square"></i></a>
+      </div>
+      <p class="signature">© Stella-Region by BRUNO JUSTA</p>
     </footer>
-</body>
-
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>

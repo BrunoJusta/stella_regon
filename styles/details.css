@@ -61,6 +61,10 @@ body {
   align-items: center;
   box-shadow: var(--shadow);
 }
+.nav a {
+  color: white;
+  text-decoration: none;
+}
 
 .title {
   color: var(--secundary);
@@ -158,7 +162,7 @@ div[class$="-section"] {
   width: 100vw;
   position: relative;
   left: calc(-50vw + 50%);
-  background-image: url("./Evolutions.png");
+  background-image: url("../img/Evolutions.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -293,7 +297,7 @@ div[class$="-img"] {
 
 .gallery-img-1 {
   grid-area: gallery-img-1;
-  background-image: url("./salusan_2.png");
+  background-image: url("../img/salusan_2.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -301,7 +305,7 @@ div[class$="-img"] {
 
 .gallery-img-2 {
   grid-area: gallery-img-2;
-  background-image: url("./salusan_5.png");
+  background-image: url("../img/salusan_5.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -309,7 +313,7 @@ div[class$="-img"] {
 
 .gallery-img-3 {
   grid-area: gallery-img-3;
-  background-image: url("./salusan_7.png");
+  background-image: url("../img/salusan_7.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -317,7 +321,7 @@ div[class$="-img"] {
 
 .gallery-img-4 {
   grid-area: gallery-img-4;
-  background-image: url("./salusan_3.png");
+  background-image: url("../img/salusan_3.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -325,7 +329,7 @@ div[class$="-img"] {
 
 .gallery-img-5 {
   grid-area: gallery-img-5;
-  background-image: url("./salusan_4.png");
+  background-image: url("../img/salusan_4.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -333,7 +337,7 @@ div[class$="-img"] {
 
 .gallery-img-6 {
   grid-area: gallery-img-6;
-  background-image: url("./salusan_1.png");
+  background-image: url("../img/salusan_1.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -341,7 +345,7 @@ div[class$="-img"] {
 
 .gallery-img-7 {
   grid-area: gallery-img-7;
-  background-image: url("./salusan_6.png");
+  background-image: url("../img/salusan_6.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -349,7 +353,7 @@ div[class$="-img"] {
 
 .gallery-img-8 {
   grid-area: gallery-img-8;
-  background-image: url("./salusan_8.png");
+  background-image: url("../img/salusan_8.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
